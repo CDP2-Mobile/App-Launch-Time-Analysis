@@ -5,6 +5,8 @@
 ---
 
 ## Target Launch Time
+<br>
+
 @ul[squares]
 
 - Apple Recommended App Launch Time: 400ms. On iPad, its 500ms.
@@ -16,7 +18,9 @@
 ---
 
 ## Launch Types
-@ol[spaced-list-items]
+<br>
+
+@ol
 
 - Warm Launch:
 	+ When your app and/or its data is cached.  Generally between quit and relaunch of your app. Tends to be faster than warm launch.
@@ -28,10 +32,11 @@
 ---
 
 ## How to Measure Launch Time
+<br>
 
 ---
 
-@ul[spaced-list-items]
+@ul
 
 - Pre-main: Time OS takes to launch app's process, resolve and load dependecies and rebase and bind dylibs and their symbols before calling main function
 	+ Use DYLD_PRINT_STATISTICS environment variable to inform dyld to print the pre-main statistics to console. 
@@ -40,7 +45,8 @@
 
 ---
 
-@ul[spaced-list-items]
+<br>
+@ul
 
 - Post-main: Time applications takes since OS calls main function till application becomes active and usable by users:
 	+ Use CFAbsoluteTime method to get time when main is called and right before returning from application:didFinishLauchWithOptions: in AppDelegate
