@@ -29,12 +29,18 @@
 
 ## How to Measure Launch Time
 
+---
+
 @ol[spaced-list-items]
 
 - Pre-main: Time OS takes to launch app's process, resolve and load dependecies and rebase and bind dylibs and their symbols before calling main function
 	+ Use DYLD_PRINT_STATISTICS environment variable to inform dyld to print the pre-main statistics to console. 
 
+@olend
+
 ---
+
+@ol[spaced-list-items]
 
 - Post-main: Time applications takes since OS calls main function till application becomes active and usable by users:
 	+ Use CFAbsoluteTime method to get time when main is called and right before returning from application:didFinishLauchWithOptions: in AppDelegate
