@@ -19,9 +19,9 @@
 @ol[spaced-list-items]
 
 - Warm Launch:
-	- When your app and/or its data is cached.  Generally between quit and relaunch of your app. Tends to be faster than warm launch.
+	+ When your app and/or its data is cached.  Generally between quit and relaunch of your app. Tends to be faster than warm launch.
 - Cold Launch:
-	- When neither your app nor its data is cached. Generally after device reset or reboot. Tends to be slower launch.
+	+ When neither your app nor its data is cached. Generally after device reset or reboot. Tends to be slower launch.
 
 @olend
 
@@ -31,22 +31,22 @@
 
 ---
 
-@ol[spaced-list-items]
+@ul[spaced-list-items]
 
 - Pre-main: Time OS takes to launch app's process, resolve and load dependecies and rebase and bind dylibs and their symbols before calling main function
 	+ Use DYLD_PRINT_STATISTICS environment variable to inform dyld to print the pre-main statistics to console. 
 
-@olend
+@ulend
 
 ---
 
-@ol[spaced-list-items]
+@ul[spaced-list-items]
 
 - Post-main: Time applications takes since OS calls main function till application becomes active and usable by users:
 	+ Use CFAbsoluteTime method to get time when main is called and right before returning from application:didFinishLauchWithOptions: in AppDelegate
 	+ Developers need to have their own measurement because methods could be returned successfully and yet app is not usable for users 
 
-@olend
+@ulend
 
 ---
 
@@ -67,13 +67,13 @@
 	* ObjC setup time: 154.66 miliseconds (2.4%)
 	* initializer time: 165.75 miliseconds (2.5%)
 	* slowest initializers: 
-		* libSystem.B.dylib: 13.61 miliseconds (0.2%) |
+		* libSystem.B.dylib: 13.61 miliseconds (0.2%) 
 
 ---
 
 * Post-main: 2.6034619808197 seconds
 	* Time measured between `application:willFinishLauchWithOptions:` and `application:didBecomeActive:`
-	* Actual time before app becomes usable could be higher |
+	* Actual time before app becomes usable could be higher 
 
 ---
 
