@@ -1,0 +1,9 @@
+#
+# GitPitch Slideshow Custom Settings
+#
+# For details, visit Wiki:
+# https://github.com/gitpitch/gitpitch/wiki/Slideshow-Settings
+#
+theme : black
+published : true
+footnote : "Copyright © Philips India Limited"
