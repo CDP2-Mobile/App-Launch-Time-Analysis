@@ -82,6 +82,9 @@
 * Merge dylibs 
   * UAppFrameworks should embed the component framework
   * Use subspecs to contain smaller components within other components
+
+---
+
 * Use static libraries/frameworks instead of dynamic frameworks
   * CocoaPods 1.5.0 added support for that
   * Components might need to do some work to support static libs
@@ -98,7 +101,7 @@
 
 * Less number of classes and methods
 * Use more Swift
-* Use more swift structs than classes
+* Swift structs over classes
 * Mark classes as final if not required to be inherited
 
 ---
@@ -107,9 +110,9 @@
 
 ---
 
-To many duplicate reachability classes
+Too many duplicate reachability classes
 
-* AFNtworkingReachability
+* AFNetworkingReachability
 * RESTClientReachability
 * DIComm.Reachability
 * EWSReachability
