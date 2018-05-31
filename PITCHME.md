@@ -69,4 +69,49 @@
 * RefApp depends on 87 external dylibs |
 * RefApp depends on 52 platform dylibs |
 
+---
 
+## Improvements
+
+---
+
+#### Major Improvement Points
+
+* Use lesser dylibs 
+  * Apple recommends max 6 dylibs per app
+* Merge dylibs 
+  * UAppFrameworks should embed the component framework
+  * Use subspecs to contain smaller components within other components
+* Use static libraries/frameworks instead of dynamic frameworks
+  * CocoaPods 1.5.0 added support for that
+  * Components might need to do some work to support static libs
+* Smaller UserDefaults size
+  * Do not store big objects in UserDefaults
+  * SecureStorage uses user defaults and need to be changed
+* Do less work on app launch
+  * Lazy initialization of components
+  * Do initialization asynchronously or on background queues
+
+---
+
+#### Minor Improvement Points
+
+* Less number of classes and methods
+* Use more Swift
+* Use more swift structs than classes
+* Mark classes as final if not required to be inherited
+
+---
+
+## Random Points
+
+---
+
+To many duplicate reachability classes
+
+* AFNtworkingReachability
+* RESTClientReachability
+* DIComm.Reachability
+* EWSReachability
+* RegistrationReachability
+* SwiftReachability
