@@ -91,6 +91,10 @@
 * Smaller UserDefaults size
   * Do not store big objects in UserDefaults
   * SecureStorage uses user defaults and need to be changed
+
+---
+
+
 * Do less work on app launch
   * Lazy initialization of components
   * Do initialization asynchronously or on background queues
@@ -106,7 +110,7 @@
 
 ---
 
-## Random Points
+## Random Point
 
 ---
 
@@ -118,3 +122,11 @@ Too many duplicate reachability classes
 * EWSReachability
 * RegistrationReachability
 * SwiftReachability
+
+---
+
+## Notes
+
+---
+
+## Thanks
